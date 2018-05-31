@@ -17,13 +17,49 @@ body {
 }
 
 article {
-
+  margin-left: 3%;
+  margin-right: 3%;
+  display: inline-block;
+  width: 100%;
+  /* box-shadow: 8px 1px 50px grey; */
 }
 
-h1 {
-
+h1, h2{
+  font-style: oblique;
+  font-family: cursive;
 }
 
 img {
+  display: inline-block;
+  box-shadow: 8px 1px 50px grey;
+  /* margin: 10px; */
+  width: 90%;
+  max-width: 100%;
+}
 
+p {
+  box-shadow: 8px 1px 50px grey;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.flex{
+  display: flex;
+  
+}
+
+.headerBanner{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.line {
+  border-top: 6px solid green;
+  width: 100%;
+  border-top: 2px solid burlywood;
+}
+
+.heading{
+  width: 100%;
 }
