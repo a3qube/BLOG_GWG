@@ -20,7 +20,7 @@ article {
   margin-left: 3%;
   margin-right: 3%;
   display: inline-block;
-  width: 100%;
+  width: 97%;
   /* box-shadow: 8px 1px 50px grey; */
 }
 
@@ -32,7 +32,7 @@ h1, h2{
 img {
   display: inline-block;
   box-shadow: 8px 1px 50px grey;
-  /* margin: 10px; */
+  padding: 0 auto;
   width: 90%;
   max-width: 100%;
 }
@@ -62,4 +62,12 @@ p {
 
 .heading{
   width: 100%;
+}
+
+.footerDiv {
+  width: 100%;  
+  margin-left: 50%;
+}
+.zocial{
+  box-shadow: 3px 4px #bfb4b4 !important;
 }
