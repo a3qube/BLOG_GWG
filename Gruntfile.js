@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         options: {
           engine: 'im',
           sizes: [{
-            width: 750, 
+            width: 1200, 
             height: 750,
             // suffix: "320x240",
             quality:50
@@ -35,11 +35,11 @@ module.exports = function(grunt) {
     },
 
     /* Clear out the images directory if it exists */
-    // clean: {
-    //   dev: {
-    //     src: ['images'],
-    //   },
-    // },
+    clean: {
+      dev: {
+        src: ['images'],
+      },
+    },
 
     /* Generate the images directory if it is missing */
     mkdir: {
@@ -63,9 +63,9 @@ module.exports = function(grunt) {
   });
   
   grunt.loadNpmTasks('grunt-responsive-images');
-  // grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', [ 'mkdir', 'copy', 'responsive_images']);
+  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
 
 };
